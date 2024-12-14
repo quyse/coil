@@ -17,7 +17,7 @@ in lib.makeScope lib.callPackageWith (coil: lib.makeExtensible (_: with coil; {
   toolchain-windows = callPackage (repo "coil-toolchain-windows") {};
   toolchain-msvs = callPackage (repo "coil-toolchain-msvs") {};
   toolchain-macos = callPackage (repo "coil-toolchain-macos") {};
-  toolchain-deploy = callPackage (repo "toolchain-deploy") {};
+  toolchain-deploy = callPackage (repo "coil-toolchain-deploy") {};
 
   # a number of projects is not public due to non-redistributable dependencies
   # they are optional for other projects, but need to be set to null explicitly
